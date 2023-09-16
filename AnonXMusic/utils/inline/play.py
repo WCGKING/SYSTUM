@@ -52,6 +52,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         bar = " 🔥BRANDRD_BOT🔥 "   
     else:
         bar = " 🍷ѕσ ¢ιтє ѕσηg🍷 "
+        
     buttons = [
         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
