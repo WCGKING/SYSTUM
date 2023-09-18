@@ -13,7 +13,7 @@ from config import BANNED_USERS, PING_IMG_URL
 
 @app.on_message(filters.command(["ping", "alive"]) & ~BANNED_USERS)
 @language
- async def ping_com(client, message: Message, _):
+async def ping_com(client, message: Message, _):
     start = datetime.now()
     response = await message.reply_photo(
         photo=PING_IMG_URL,
@@ -26,6 +26,3 @@ from config import BANNED_USERS, PING_IMG_URL
         _["ping_2"].format(resp, app.mention, UP, RAM, CPU, DISK, pytgping),
         reply_markup=supp_markup(_),
     )
-   
-    
-        
