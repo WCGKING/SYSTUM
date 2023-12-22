@@ -2,8 +2,6 @@ import os
 import aiohttp
 import aiofiles
 
-from config import YOUTUBE_IMG_URL
-
 async def get_thumb(videoid):
     if os.path.isfile(f"cache/Aviax{videoid}_v4.png"): 
         return f"cache/Aviax{videoid}_v4.png"
