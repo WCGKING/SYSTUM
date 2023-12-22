@@ -1,4 +1,4 @@
-/eval import os
+import os
 import aiohttp
 import aiofiles
 
