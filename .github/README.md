@@ -1,6 +1,8 @@
+
 <h2 align="center">
-    ──「 𝗕𝗥𝗔𝗡𝗗𝗘𝗗 𝗠𝗨𝗦𝗜𝗖 」──
+     ──「 𝐒𝐘𝐒𝐓𝐔𝐌 𝓧 𝐌𝐔𝐒𝐈𝐂 」──
 </h2>
+
 
 <p align="center">
   <img src="https://te.legra.ph/file/a97b0a381fa37a82b4213.jpg">
@@ -14,9 +16,9 @@
 <a href="https://github.com/WCGKING/SYSTUM/commits/WCGKING"> <img src="https://img.shields.io/github/last-commit/WCGKING/SYSTUM?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
 </p>
 
-<p align="center">
-  <img src="https://te.legra.ph/file/9326a83785de96327847a.png">
-</p>
+   <p align="center">
+     <img src="https://te.legra.ph/file/4275f44fbc39d4f95bb9d.png">
+     </p>
 
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
