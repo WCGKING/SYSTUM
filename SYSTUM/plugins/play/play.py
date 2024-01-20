@@ -224,7 +224,7 @@ async def play_commnd(
                 streamtype = "playlist"
                 plist_type = "spartist"
                 img = config.SPOTIFY_ARTIST_IMG_URL
-                cap = _["play_11"].format(message.from_user.first_name)
+                cap = _["play_12"].format(message.from_user.first_name)
             else:
                 return await mystic.edit_text(_["play_15"])
         elif await Apple.valid(url):
