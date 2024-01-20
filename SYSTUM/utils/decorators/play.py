@@ -52,9 +52,9 @@ def PlayWrapper(command):
                 )
 
         try:
-                await message.delete()
-            except:
-                pass
+            await message.delete()
+        except:
+            pass
         language = await get_lang(message.chat.id)
         _ = get_string(language)
         audio_telegram = (
