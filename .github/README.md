@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/WCGKING/SYSTUM"><img src="https://img.shields.io/https://github.com/WCGKING?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
+<a href="https://github.com/WCGKING/stargazers"><img src="https://img.shields.io/https://github.com/WCGKING/SYSTUM?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
 <a href="https://github.com/WCGKING/SYSTUM/network/members"> <img src="https://img.shields.io/github/forks/WCGKING/SYSTUM?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
 <a href="https://github.com/WCGKING/SYSTUM/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
