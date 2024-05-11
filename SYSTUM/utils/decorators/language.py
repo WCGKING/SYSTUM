@@ -2,7 +2,7 @@ from strings import get_string
 
 from SYSTUM import app
 from SYSTUM.misc import SUDOERS
-from SYSTUM import SUPPORT_CHAT
+from config  import SUPPORT_CHAT
 from SYSTUM.utils.database import get_lang, is_maintenance
 
 
