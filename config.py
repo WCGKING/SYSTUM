@@ -7,11 +7,11 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID", "23523169")
-API_HASH = getenv("API_HASH", "7c3c56210947d7eb82e2a077b4f5c8c5")
+API_ID = int(getenv("API_ID",))
+API_HASH = getenv("API_HASH",)
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN", "6474377482:AAFE2zdy4c6oF5QngGV__oCUdYZO1ovHBm4")
+BOT_TOKEN = getenv("BOT_TOKEN",)
 
 # Get Your bot username
 BOT_USERNAME = getenv("BOT_USERNAME" , "Systumm_music_bot")
@@ -20,12 +20,12 @@ BOT_USERNAME = getenv("BOT_USERNAME" , "Systumm_music_bot")
 BOT_NAME = getenv("BOT_NAME" , "Sytumm")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Tksop:Tksop@sarkar.h3aht1y.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI",)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 900))
 
 # Chat id of a group for logging bot's activities
-LOGGER_ID = int(getenv("LOGGER_ID", "-1001645282995"))
+LOGGER_ID = int(getenv("LOGGER_ID",))
 
 # Get this value from @FallenxBot on Telegram by /id
 OWNER_ID = int(getenv("OWNER_ID", 6258877205))
@@ -68,7 +68,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @BRANDEDSTRINGSESSION_BOT on Telegram
-STRING1 = getenv("STRING_SESSION", "BQFm72EAD7-FgJegbJ06gE3XN-z6DeSr_E7mugTJ1NmOxvzeVx5kKCYymTLSuTZ8dZUQGE34REo-_Oszf5qKYHccgmWPq1VR82n3sjmycn16DqDCF8PUweLrUKbrCfSgYb_2OLqdLoCwkUUAPEE7jw2hjXTBs3JWuHA5Os5MBfciF0V-oD0pAEXNmM6jrx_04kMKMV9kiW05x0V77Mojv5Z22fadIisL4Zd00InoOkwKB3bVKvWQg2P7-01usMsQb7nOFDJgXdd-GrHuwzO1tiN6X4Pe0MNfwqk5FXlAEMji6t8Cje3oo1AVsTeN9YuH1HCYV41p57UvacINR3egxuelw3sWeAAAAAG3DrBPAA")
+STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
