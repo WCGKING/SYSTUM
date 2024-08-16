@@ -10,9 +10,8 @@ heroku3
 motor
 pillow
 psutil
-py-tgcalls==1.2.9
+py-tgcalls==0.9.7
 pykeyboard
-https://github.com/KurimuzonAkuma/pyrogram/archive/v2.1.23.zip
 python-dotenv
 pyyaml
 requests
@@ -23,3 +22,4 @@ unidecode
 yt-dlp
 youtube-search
 youtube-search-python
+https://github.com/KurimuzonAkuma/pyrogram/archive/v2.1.23.zip
