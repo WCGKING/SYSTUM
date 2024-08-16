@@ -2,7 +2,6 @@ import asyncio
 import importlib
 
 from pyrogram import idle
-from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from SYSTUM import LOGGER, app, userbot
@@ -39,15 +38,6 @@ async def init():
     LOGGER("SYSTUM.plugins").info("Successfully Imported Modules...")
     await userbot.start()
     await KING.start()
-    try:
-        await KING.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
-    except NoActiveGroupCall:
-        LOGGER("SYSTUM").error(
-            "Please turn on the videochat of your log group\channel.\n\nStopping Bot..."
-        )
-        exit()
-    except:
-        pass
     await KING.decorators()
     LOGGER("SYSTUM").info(
         "DROP YOUR GIRLFRIEND'S NUMBER AND SEXY PIC TO @BRANDEDKING82 JOIN @BRANDRD_BOT , @BRANDED_WORLD FOR ANY ISSUES"
