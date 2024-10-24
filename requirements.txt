@@ -14,7 +14,7 @@ py-tgcalls==0.9.7
 pykeyboard
 python-dotenv
 pyyaml
-pyrogram
+pymongo[srv]
 pyrofork
 requests
 speedtest-cli
