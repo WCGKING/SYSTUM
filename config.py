@@ -47,7 +47,7 @@ GIT_TOKEN = getenv(
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/BRANDRD_BOT")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/BRANDED_WORLD")
-HEROKU_CHAT2 = getenv("HEROKU_CHAT2", "https://t.me/BRANDED_PAID_CC")
+HEROKU_CHAT = getenv("HEROKU_CHAT", "https://t.me/BRANDED_PAID_CC")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
