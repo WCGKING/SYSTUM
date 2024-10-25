@@ -16,6 +16,9 @@ BOT_TOKEN = getenv("BOT_TOKEN",)
 # Get Your bot username
 BOT_USERNAME = getenv("BOT_USERNAME" , "Systumm_music_bot")
 
+# Get Your repo
+REPO_LINK = getenv("REPO_LINK" , "https://t.me/BRANDED_PAID_CC")
+
 # Don't Add style font 
 BOT_NAME = getenv("BOT_NAME" , "Sytumm")
 
@@ -47,7 +50,6 @@ GIT_TOKEN = getenv(
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/BRANDRD_BOT")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/BRANDED_WORLD")
-HEROKU_CHAT = getenv("HEROKU_CHAT", "https://t.me/BRANDED_PAID_CC")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
