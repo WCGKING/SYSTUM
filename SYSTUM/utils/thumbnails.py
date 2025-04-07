@@ -28,7 +28,7 @@ def truncate(text):
 
     text1 = text1.strip()
     text2 = text2.strip()     
-    return [text1,text2]
+    return [text1, text2]
 
 def crop_center_circle(img, output_size, border, crop_scale=1.5):
     half_the_width = img.size[0] / 2
@@ -45,16 +45,13 @@ def crop_center_circle(img, output_size, border, crop_scale=1.5):
     
     img = img.resize((output_size - 2*border, output_size - 2*border))
     
-    
     final_img = Image.new("RGBA", (output_size, output_size), "white")
-    
     
     mask_main = Image.new("L", (output_size - 2*border, output_size - 2*border), 0)
     draw_main = ImageDraw.Draw(mask_main)
     draw_main.ellipse((0, 0, output_size - 2*border, output_size - 2*border), fill=255)
     
     final_img.paste(img, (border, border), mask_main)
-    
     
     mask_border = Image.new("L", (output_size, output_size), 0)
     draw_border = ImageDraw.Draw(mask_border)
@@ -64,9 +61,7 @@ def crop_center_circle(img, output_size, border, crop_scale=1.5):
     
     return result
 
-
-
-async def get_thumb(videoid):
+async def get_thumb(videoid, progress_percentage):
     if os.path.isfile(f"cache/{videoid}_v4.png"):
         return f"cache/{videoid}_v4.png"
 
@@ -111,7 +106,6 @@ async def get_thumb(videoid):
     font = ImageFont.truetype("SYSTUM/assets/font.ttf", 30)
     title_font = ImageFont.truetype("SYSTUM/assets/font3.ttf", 45)
 
-
     circle_thumbnail = crop_center_circle(youtube, 400, 20)
     circle_thumbnail = circle_thumbnail.resize((400, 400))
     circle_position = (120, 160)
@@ -124,28 +118,28 @@ async def get_thumb(videoid):
     draw.text((text_x_position, 230), title1[1], fill=(255, 255, 255), font=title_font)
     draw.text((text_x_position, 320), f"{channel}  |  {views[:23]}", (255, 255, 255), font=arial)
 
-    
     line_length = 580  
 
-    
     red_length = int(line_length * 0.6)
     white_length = line_length - red_length
 
-    
     start_point_red = (text_x_position, 380)
     end_point_red = (text_x_position + red_length, 380)
     draw.line([start_point_red, end_point_red], fill="red", width=9)
 
-    
     start_point_white = (text_x_position + red_length, 380)
     end_point_white = (text_x_position + line_length, 380)
     draw.line([start_point_white, end_point_white], fill="white", width=8)
 
-    
-    circle_radius = 10 
-    circle_position = (end_point_red[0], end_point_red[1])
-    draw.ellipse([circle_position[0] - circle_radius, circle_position[1] - circle_radius,
-                  circle_position[0] + circle_radius, circle_position[1] + circle_radius], fill="red")
+    # Calculate the position for the small circle based on the progress bar length
+    small_circle_position_x = text_x_position + int(red_length + white_length * progress_percentage)
+    small_circle_position_y = 380
+
+    # Draw the small circle
+    circle_radius = 10
+    draw.ellipse([small_circle_position_x - circle_radius, small_circle_position_y - circle_radius,
+                  small_circle_position_x + circle_radius, small_circle_position_y + circle_radius], fill="red")
+
     draw.text((text_x_position, 400), "00:00", (255, 255, 255), font=arial)
     draw.text((1080, 400), duration, (255, 255, 255), font=arial)
 
