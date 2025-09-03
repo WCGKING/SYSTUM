@@ -11,7 +11,7 @@ motor
 pillow
 httpx==0.25.2
 psutil
-py-tgcalls==1.2.9
+py-tgcalls==0.9.7
 pykeyboard
 python-dotenv
 pyyaml
