@@ -14,6 +14,8 @@ pillow==10.4.0
 psutil
 wget
 speedtest
+spotipy
+SafoneAPI
 py-tgcalls==1.2.9
 ntgcalls==1.1.2
 gitpython
