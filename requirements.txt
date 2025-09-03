@@ -16,6 +16,7 @@ pykeyboard
 python-dotenv
 pyyaml
 requests
+spotipy
 speedtest-cli
 tgcrypto
 unidecode
