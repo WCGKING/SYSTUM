@@ -23,4 +23,5 @@ unidecode
 yt-dlp
 youtube-search
 youtube-search-python
+TelegramServerError
 https://github.com/KurimuzonAkuma/pyrogram/archive/v2.1.23.zip
