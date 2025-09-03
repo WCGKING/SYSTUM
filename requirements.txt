@@ -17,8 +17,6 @@ python-dotenv
 pyyaml
 requests
 speedtest-cli
-spotipy
-SafoneAPI
 tgcrypto
 unidecode
 yt-dlp
